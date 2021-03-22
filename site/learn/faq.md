@@ -294,7 +294,7 @@ computes the image of the argument is written after an `=` sign.
 ```ocamltop
 let successor (n) = n + 1;;
 ```
-In fact, parens surrounding the argument may be omitted, so we generally
+In fact, parentheses surrounding the argument may be omitted, so we generally
 write:
 
 ```ocamltop
@@ -326,12 +326,12 @@ and even n =
 #### How to apply a function?
 
 Functions are applied as in mathematics: write the function's name,
-followed by its argument enclosed in parens: f (x). In practice, parens
+followed by its argument enclosed in parentheses: f (x). In practice,parentheses
 are omitted in case of constants or identifiers: we write `fib 2`
 instead of `fib (2)`, and `fact x` instead of `fact (x)`.<br />
  When the argument of a function is more complex than just an
 identifier, you must enclose this argument between parentheses. In
-particular you need parens when the argument is a negative constant
+particular you need parentheses when the argument is a negative constant
 number: to apply `f` to `-1` you must write `f (-1)` and **not** `f -1`
 that is syntactically similar to `f - 1` (hence it is a subtraction, not
 an application).
@@ -469,7 +469,7 @@ print_newline ();;
 ###  Pattern matching
 #### How to do nested pattern matching?
 
-You imperatively need to enclose between parens a pattern matching which
+You imperatively need to enclose between parentheses a pattern matching which
 is written inside another pattern matching. In effect, the internal
 pattern matching “catches” all the pattern matching clauses that are
 written after it. For instance:
@@ -629,7 +629,7 @@ printing functions by the high level printing functions provided by
 
 #### Can I have two mutually recursive structures, signatures, functors inside a single compilation unit?
 
-Yes, but structures always have to have  an explcit signature. 
+Yes, but structures always have to have  an explicit signature. 
 Recursive structures may be defined as follows:
 
 ```ocamltop
